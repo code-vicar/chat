@@ -1,0 +1,15 @@
+version: '2'
+services:
+    chat:
+        build:
+            context: .
+            dockerfile: ./dockerfiles/dev.Dockerfile
+        command: 'npm run watch'
+        environment:
+            NODE_ENV: development
+        ports:
+            - '3000:3000'
+            - '5858:5858'
+        volumes:
+            - .:/home/app/chat
+            - /home/app/chat/node_modules

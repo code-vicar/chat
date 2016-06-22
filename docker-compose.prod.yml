@@ -1,0 +1,11 @@
+version: '2'
+services:
+    chat:
+        build:
+            context: .
+            dockerfile: ./dockerfiles/prod.Dockerfile
+        environment:
+            NODE_ENV: production
+        ports:
+            - '3000:3000'
+        restart: always

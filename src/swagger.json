@@ -1,0 +1,34 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1",
+        "title": "chat"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/hello": {
+            "get": {
+                "summary": "Hello world",
+                "description": "Say hello",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                }
+            }
+        },
+        "/version": {
+            "get": {
+                "summary": "Version",
+                "description": "Returns app version",
+                "responses": {
+                    "200": {
+                        "description": "Successfully returns app version"
+                    }
+                }
+            }
+        }
+    }
+}

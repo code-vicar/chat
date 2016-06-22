@@ -1,0 +1,36 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp compile",
+    "watch": "gulp watch",
+    "watch-debug": "gulp watch --debug",
+    "start": "node dist/server | bunyan"
+  },
+  "author": "Scott Vickers",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "bunyan": "^1.8.1",
+    "express": "^4.14.0",
+    "on-headers": "^1.0.1",
+    "socket.io": "^1.4.6",
+    "swaggerize-express": "^4.0.5",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-native-generators": "^6.6.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-file-cache": "0.0.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.8",
+    "yargs": "^4.7.1"
+  }
+}
